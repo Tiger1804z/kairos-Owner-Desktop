@@ -1,0 +1,200 @@
+/* =========================
+   KAIROS – Global Style
+   ========================= */
+
+/* ===== Base ===== */
+QWidget {
+  background: #121212;
+  color: #e8e8e8;
+  font-family: "Segoe UI", Arial;
+  font-size: 13px;
+}
+
+QLabel {
+  color: #e8e8e8;
+}
+
+/* ===== Inputs ===== */
+QLineEdit, QComboBox {
+  background: #1b1b1b;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #e8e8e8;
+}
+
+QLineEdit:focus, QComboBox:focus {
+  border: 1px solid #3a7afe;
+}
+
+/* ===== Buttons (base) ===== */
+QPushButton {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.06);
+  color: #eaeaea;
+  font-weight: 600;
+}
+
+QPushButton:hover {
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.14);
+}
+
+QPushButton:pressed {
+  background: rgba(255,255,255,0.14);
+}
+
+QPushButton:disabled {
+  color: rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ===== Button Variants ===== */
+QPushButton#btnPrimary {
+  background: rgba(59,130,246,0.85);
+  border: 1px solid rgba(59,130,246,0.95);
+  color: #ffffff;
+}
+QPushButton#btnPrimary:hover {
+  background: rgba(59,130,246,1.0);
+}
+
+QPushButton#btnDanger {
+  background: rgba(239,68,68,0.85);
+  border: 1px solid rgba(239,68,68,0.95);
+  color: #ffffff;
+}
+QPushButton#btnDanger:hover {
+  background: rgba(239,68,68,1.0);
+}
+
+QPushButton#btnNeutral {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ===== Tabs ===== */
+QTabWidget::pane {
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  margin-top: 6px;
+}
+
+QTabBar::tab {
+  padding: 8px 14px;
+  margin-right: 10px;        /* espace entre onglets */
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.75);
+}
+
+QTabBar::tab:selected {
+  background: rgba(59,130,246,0.85);
+  color: #ffffff;
+}
+
+QTabBar::tab:hover {
+  background: rgba(255,255,255,0.10);
+}
+
+QTabBar::tab:disabled {
+  color: rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.03);
+}
+
+/* ===== Tables ===== */
+QTableWidget {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  gridline-color: rgba(255,255,255,0.06);
+}
+
+QHeaderView::section {
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.85);
+  padding: 8px;
+  border: none;
+  font-weight: 700;
+}
+
+QTableWidget::item {
+  padding: 6px;
+}
+
+QTableWidget::item:selected {
+  background: rgba(59,130,246,0.25);
+  color: #ffffff;
+}
+
+/* ===== Checkboxes ===== */
+QCheckBox {
+  padding: 4px;
+}
+
+QCheckBox::indicator {
+  width: 16px;
+  height: 16px;
+}
+
+QCheckBox::indicator:unchecked {
+  background: #1b1b1b;
+  border: 1px solid #3a3a3a;
+  border-radius: 4px;
+}
+
+QCheckBox::indicator:checked {
+  background: #3a7afe;
+  border: 1px solid #3a7afe;
+  border-radius: 4px;
+}
+
+/* ===== Dialogs ===== */
+QDialog, QMessageBox {
+  background: #121212;
+}
+
+/* =========================
+   TopBar (Toolbar)
+   ========================= */
+#topBar {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+}
+
+#topBarLogo {
+  padding: 4px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+}
+
+#topBarTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.92);
+}
+
+#topBarLabel {
+  color: rgba(255,255,255,0.65);
+  padding-right: 6px;
+}
+
+#bizCombo {
+  padding: 6px 10px;
+  border-radius: 10px;
+  min-height: 34px;
+  font-weight: 600;
+}
+
+#btnUserMenu {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+}
+#btnUserMenu:hover {
+  background: rgba(59,130,246,0.12);
+}
