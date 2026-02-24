@@ -2,3 +2,4 @@ PyQt6
 psycopg2-binary
 python-dotenv
 bcrypt
+matplotlib
