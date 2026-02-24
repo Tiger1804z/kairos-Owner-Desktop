@@ -199,7 +199,7 @@ class TransactionForm(QDialog):
         eng_val = self.spin_eng.value()
         engagement_id = None if eng_val == 0 else eng_val
         
-        category = (self.ed_category.text() or "").strip() or None
+        category = (self.ed_category.text() or "").strip().lower() or None
         reference_number = (self.ed_ref.text() or "").strip() or None
         description = (self.ed_desc.text() or "").strip() or None
         

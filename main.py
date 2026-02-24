@@ -6,11 +6,14 @@ import sys
 
 from PyQt6.QtWidgets import QApplication
 
+
 from ui.login_window import LoginWindow
 from ui.dashboard_window import DashboardWindow
 
 
 def main() -> int:
+    
+
     app = QApplication(sys.argv)
 
     # Global stylesheet (QSS)

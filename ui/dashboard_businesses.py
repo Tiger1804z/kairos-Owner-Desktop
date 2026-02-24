@@ -191,11 +191,10 @@ class BusinessesMixin:
             self.refresh_engagements()
         except Exception as e:
             QMessageBox.critical(self, "Erreur", str(e))
-    """
-      verifie que une business est selectionnée ensuite recupere le nom de la business depuis le comboBox,
-       ouvre une boite dialog pour choisir un dossier si user annule -> return, sinon appelle la fonction d'export et
-       fait la query sql pour recuperer les transactions de la business et les exporte dans un fichier csv 
-    """        
+    
+    # verifie que une business est selectionnée ensuite recupere le nom de la business depuis le comboBox,
+    #  ouvre une boite dialog pour choisir un dossier si user annule -> return, sinon appelle la fonction d'export et
+    # fait la query sql pour recuperer les transactions de la business et les exporte dans un fichier csv         
     def on_export_transactions(self) -> None:
         if not self.selected_business_id:
             return
@@ -210,7 +209,7 @@ class BusinessesMixin:
         except Exception as e:
             QMessageBox.critical(self, "Erreur", str(e))
             
-    """ même logique que pour les transactions mais pour les clients et engagements d'une business donnée"""
+    # même logique que pour les transactions mais pour les clients et engagements d'une business donnée
     def on_export_clients_engagements(self) -> None:
         if not self.selected_business_id:
             return

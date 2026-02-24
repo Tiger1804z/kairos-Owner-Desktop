@@ -273,3 +273,5 @@ def get_balance(business_id: int) -> Decimal:
         return income - expense
     finally:
         conn.close()
+
+

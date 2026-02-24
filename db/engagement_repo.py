@@ -11,16 +11,13 @@ from typing import List, Optional, Dict, Any
 
 
 
-"""
-Repository pour les engagements (devis, projets, etc.)
-chauqe fonction ouvre et ferme sa propre connexion pour éviter des problemes 
-  - performance:
-          -garder la connexion ouverte consome des ressources et la garder ouverte en consome de maniere inutile
-  - isolation des erreurs: 
-           - si une oppération  leve une exception le finally assure la fermeture de la connexion et evite de laisser des connexions ouvertes en cas d'erreur
-"""
 
-
+# Repository pour les engagements (devis, projets, etc.)
+# chauqe fonction ouvre et ferme sa propre connexion pour éviter des problemes 
+# - performance:
+#        -garder la connexion ouverte consome des ressources et la garder ouverte en consome de maniere inutile
+#  - isolation des erreurs: 
+#           - si une oppération  leve une exception le finally assure la fermeture de la connexion et evite de laisser des connexions ouvertes en cas d'erreur
 @dataclass(frozen=True)
 class EngagementRow:
     id_engagement: int
